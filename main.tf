@@ -21,7 +21,7 @@ locals {
   public_subnets_cidr = "${[cidrsubnet(local.cidr_block, 4, 0)]}" #do not change if you want to reuse
   private_subnets_cidr = "${[cidrsubnet(local.cidr_block, 4, 1), cidrsubnet(local.cidr_block, 4, 2)]}"
   region = "us-west-2"
-  iamrole = "arn:aws:iam::997819012307:role/rkm-overwatch-1"
+  iamrole = "arn:aws:iam::997819123407:role/rkm-overrole-1"
   common_tags = {
     "Owner"       : "ramdas.murali@databricks.com"
     "Mech"        : "Terraform"
